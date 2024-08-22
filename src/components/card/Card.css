@@ -1,0 +1,37 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 16px; /* Adjust gap between cards as needed */
+}
+
+.card {
+  border: 1px solid #ddd; /* Example styling */
+  border-radius: 8px; /* Example styling */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example styling */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Example styling for hover effect */
+}
+
+.thumbnail {
+  width: 100%; /* Make image fill the card */
+  height: auto;
+}
+
+.bottom {
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.amount {
+  font-size: 1em;
+  color: #555;
+}
